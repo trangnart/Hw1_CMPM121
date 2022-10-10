@@ -1,0 +1,173 @@
+<!DOCTYPE html><html lang="en" class="no-js">
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<script type="text/javascript" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" charset="UTF-8" data-domain-script="6e91be4c-3145-4ea2-aa64-89d716064836"></script><script type="text/javascript">
+					function OptanonWrapper() { }
+				</script><script>var offline=(location.href.indexOf('docs.unity3d.com')==-1)?true:false;if(!offline){(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);  })(window,document,'script','dataLayer','GTM-5V25JL6');}</script><link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unity - Manual:  Structuring UXML attributes</title>
+<meta property="og:image" content="https://unity3d.com/files/images/ogimg.jpg">
+<meta name="author" content="Unity Technologies">
+<link rel="shortcut icon" href="https://unity.com/themes/contrib/unity_base/images/favicons/favicon.ico">
+<link rel="icon" type="image/png" href="../StaticFilesManual/images/favicons/favicon.png">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="../StaticFilesManual/images/favicons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../StaticFilesManual/images/favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="../StaticFilesManual/images/favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../StaticFilesManual/images/favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../StaticFilesManual/images/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon-precomposed" href="../StaticFilesManual/images/favicons/apple-touch-icon.png">
+<meta name="msapplication-TileColor" content="#222c37">
+<meta name="msapplication-TileImage" content="../StaticFilesManual/images/favicons/tileicon-144x144.png">
+<script type="text/javascript" src="https://docs.unity3d.com/StaticFilesConfig/UnityVersionsInfo.js"></script><script type="text/javascript" src="../StaticFilesManual/js/jquery.js?ts=20220923"></script><script type="text/javascript" src="../StaticFilesManual/js/core.js?ts=20220923"></script><script type="text/javascript" src="docdata/toc.js?ts=20220923"></script><script type="text/javascript" src="docdata/global_toc.js?ts=20220923"></script><link rel="stylesheet" type="text/css" href="../StaticFilesManual/css/core.css?ts=20220923">
+<link rel="stylesheet" href="../StaticFilesManual/css/prism.css">
+<script src="../StaticFilesManual/js/prism.js"></script><script src="/StaticFilesConfig/feedback/feedback.js"></script><script src="../StaticFilesManual/js/jquery.sidebar.min.js"></script><link rel="stylesheet" href="../StaticFilesManual/css/mobileoptimisation.css">
+<script src="../StaticFilesManual/js/mobileoptimisation.js"></script>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5V25JL6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<div id="DocsAnalyticsData" data-area="none" data-pagetype="manual"></div>
+<div class="header-wrapper">
+<div id="header" class="header"><div class="content">
+<div class="spacer"><div class="menu">
+<div id="nav-open" for="nav-input"><span></span></div>
+<div class="logo"><a href="https://docs.unity3d.com"></a></div>
+<div class="search-form"><form action="30_search.html" method="get" class="apisearch">
+<input type="text" name="q" placeholder="Search manual..." autosave="Unity Reference" results="5" class="sbox field" id="q"><input type="submit" class="submit">
+</form></div>
+<ul>
+<li><a href="../Manual/index.html" class="selected">Manual</a></li>
+<li><a href="../ScriptReference/index.html">Scripting API</a></li>
+</ul>
+</div></div>
+<div class="more">
+<div class="filler"></div>
+<ul><li><a href="https://unity.com/">unity3d.com</a></li></ul>
+</div>
+</div></div>
+<div class="toolbar"><div class="content">
+<div class="toggle version-number" id="VersionNumber" data-target=".otherversionscontent">
+                                Version: <b>2021.3</b><div class="otherversionscontent" id="OtherVersionsContent" style="display: none;">
+<ul id="OtherVersionsContentUl"></ul>
+<div id="otherVersionsLegend"><ul>
+<li>
+<div id="supportedColour" class="legendBox"></div>Supported</li>
+<li>
+<div id="notFoundColour" class="legendBox"></div>Legacy</li>
+</ul></div>
+</div>
+<div id="VersionSwitcherArrow" class="arrow versionSwitcherArrow"></div>
+</div>
+<div class="lang-switcher"><div class="current toggle" data-target=".lang-list">
+<div class="lbl">Language
+:                <span class="b">English</span>
+</div>
+<div class="arrow"></div>
+<div class="lang-list" style="display:none;"><ul>
+<li><a href="/Manual/UIB-structuring-ui-attributes.html">English</a></li>
+<li><a href="/cn/current/Manual/UIB-structuring-ui-attributes.html">中文</a></li>
+<li><a href="/ja/current/Manual/UIB-structuring-ui-attributes.html">日本語</a></li>
+<li><a href="/es/current/Manual/UIB-structuring-ui-attributes.html">Español</a></li>
+<li><a href="/kr/current/Manual/UIB-structuring-ui-attributes.html">한국어</a></li>
+<li><a href="/ru/current/Manual/UIB-structuring-ui-attributes.html">Русский</a></li>
+</ul></div>
+</div></div>
+</div></div>
+<div class="mobileLogo"><a href="https://docs.unity3d.com"></a></div>
+</div>
+<div id="master-wrapper" class="master-wrapper clear">
+<div id="sidebar" class="sidebar"><div class="sidebar-wrap"><div class="content"><div class="sidebar-menu"><div class="toc" id="customScrollbar">
+<h2>Unity Manual</h2>
+<div class="search-form sidebar-search-form"><form action="30_search.html" method="get" class="apisearch">
+<input type="text" name="q" placeholder="Search manual..." autosave="Unity Reference" results="5" class="sbox field" id="q"><input type="submit" id="mobileSearchBtn" class="submit" value="Search">
+</form></div>
+<div class="toggle version-number sidebar-version-switcher" id="VersionNumber" data-target=".otherversionscontent"><form id="otherVersionsContentMobileForm"><div class="ui-field-contain">
+<label for="select-native-4">Version: 2021.3</label><select name="select-native-4" id="versionsSelectMobile"><option>Select a different version</option>
+<optgroup id="versionsWithThisPageMobile" label="Versions with this page"></optgroup>
+<optgroup id="versionsWithoutThisPageMobile" label="Versions without this page"></optgroup></select>
+</div></form></div>
+<div class="lang-switcher"><div class="current toggle" data-target=".lang-list">
+<div class="lbl">Language
+:                <span class="b">English</span>
+</div>
+<div class="arrow"></div>
+<div class="lang-list" style="display:none;"><ul>
+<li><a href="/Manual/UIB-structuring-ui-attributes.html">English</a></li>
+<li><a href="/cn/current/Manual/UIB-structuring-ui-attributes.html">中文</a></li>
+<li><a href="/ja/current/Manual/UIB-structuring-ui-attributes.html">日本語</a></li>
+<li><a href="/es/current/Manual/UIB-structuring-ui-attributes.html">Español</a></li>
+<li><a href="/kr/current/Manual/UIB-structuring-ui-attributes.html">한국어</a></li>
+<li><a href="/ru/current/Manual/UIB-structuring-ui-attributes.html">Русский</a></li>
+</ul></div>
+</div></div>
+</div></div></div></div></div>
+<div id="content-wrap" class="content-wrap"><div class="content-block"><div class="content">
+<div class="section">
+<div class="breadcrumbs clear"><ul>
+<li><a href="UnityManual.html"> Unity User Manual 2021.3 (LTS)</a></li>
+<li><a href="UIToolkits.html"> Create user interfaces (UI)</a></li>
+<li><a href="UIElements.html"> UI Toolkit</a></li>
+<li><a href="UIBuilder.html"> UI Builder</a></li>
+<li><a href="UIB-structuring-ui.html"> Structuring UI</a></li>
+<li> Structuring UXML attributes</li>
+</ul></div>
+<div class="mb20"><div class="nextprev clear">
+<div class="icon tt left mr1" data-distance="-40|-30|top">
+<span class="prev"><a href="UIB-structuring-ui-templates.html"></a></span><div class="tip"> Using UXML instances as templates</div>
+</div>
+<div class="icon tt right" data-distance="-40|-30|top">
+<span class="next"><a href="UIB-structuring-ui-custom-elements.html"></a></span><div class="tip"> Create custom elements</div>
+</div>
+</div></div>
+<div id="_leavefeedback"></div>
+<h1>Structuring UXML attributes</h1>
+<!--BeginSwitchLink--><!--EndSwitchLink-->
+<div class="clear"></div>
+
+<h2>Attributes in UXML</h2>
+
+<p>Elements have per-element attributes which can be set in UXML. You can think of them as constructor or initialization arguments. This includes the <code>name</code> attribute. The base <code>VisualElement</code> class comes with a few standard attributes that all elements share (since all elements inherit from <code>VisualElement</code>), like: <code>name</code>, <code>tooltip</code>, and <code>tabindex</code>. More advanced elements and controls will have additional attributes you can set, for example, the <code>Label</code> adds the <code>text</code> attribute.</p>
+
+<p>A small note on the <code>text</code> attribute. The <code>text</code> attribute supports multi-line text. Just use <strong>Enter</strong> to add newline characters in the <strong><span class="tooltip"><strong>Inspector</strong><span class="tooltiptext">A Unity window that displays information about the currently selected GameObject, asset or project settings, allowing you to inspect and edit the values. <a class="tooltipMoreInfoLink" href="UsingTheInspector.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#Inspector">Glossary</a></span></span></span></strong>.</p>
+
+<h2>Change attributes in the Inspector</h2>
+
+<p>All attributes, both standard and custom, appear at the top of the <strong>Inspector</strong> in a section that has the same name as the name of the element’s type. For example, if you click on a <code>Button</code>, look for a section in the <strong>Inspector</strong> called <strong>Button</strong>.</p>
+
+<p>You can set the value of an attribute by changing the corresponding field in the attribute section. If the field appears <strong>bold</strong> with a solid line on the left of the field’s label, it means the attribute is already set and not using the default. For example, setting <code>tooltip</code> from empty to <code>test</code> and then back to empty is different from never setting it in the first place: the first case is <code>unset</code> while the second case is <code>set to empty</code>. What <code>this attribute is set</code> means is there’s an entry in the UXML text on this element setting this attribute to <code>a</code>value</p>
+
+<p>If the attribute isn’t mentioned in the UXML text, it’s <code>not set</code>.</p>
+
+<p>You can unset an attribute by right-clicking on the field’s label and choosing <strong>Unset</strong>. You can unset all attributes, including the <code>name</code> attribute, by right-clicking on any attribute field and choosing <strong>Unset All</strong>.</p>
+
+<h2>Change attributes in the Canvas</h2>
+
+<p>The only attribute you can change directly in the <strong>Canvas</strong> is the <code>text</code> attribute on text elements. To change the <code>text</code> attribute on something like a <code>Button</code> or a <code>Label</code> you can double-click on it in the <strong>Canvas</strong>. A temporary text field will appear, using the same font settings as the original text:</p>
+
+<figure>
+<img src="../uploads/Main/UIBuilder/EditButtonTextInCanvas.png" alt="EditButtonTextInCanvas">
+<figcaption>EditButtonTextInCanvas</figcaption>
+</figure>
+
+<p>Pressing <strong>Enter</strong> commits the change. If the <code>text</code> attribute contains newline characters, use <strong>Shift + Enter</strong> to commit the change. Press <strong>Esc</strong> to cancel any changes.</p>
+<div id="_content"></div>
+<div class="nextprev clear">
+<div class="icon tt left mr1" data-distance="-40|-30|top">
+<span class="prev"><a href="UIB-structuring-ui-templates.html"></a></span><div class="tip"> Using UXML instances as templates</div>
+</div>
+<div class="icon tt right" data-distance="-40|-30|top">
+<span class="next"><a href="UIB-structuring-ui-custom-elements.html"></a></span><div class="tip"> Create custom elements</div>
+</div>
+</div>
+</div>
+<div class="footer-wrapper"><div class="footer clear">
+<div class="copy">Copyright © 2021 Unity Technologies. Publication Date: 2022-09-23.</div>
+<div class="menu">
+<a href="https://learn.unity.com/">Tutorials</a><a href="https://answers.unity3d.com">Community Answers</a><a href="https://support.unity3d.com/hc/en-us">Knowledge Base</a><a href="https://forum.unity3d.com">Forums</a><a href="https://unity3d.com/asset-store">Asset Store</a><a href="https://docs.unity3d.com/Manual/TermsOfUse.html">Terms of use</a>
+</div>
+</div></div>
+</div></div></div>
+</div>
+</body>
+</html>

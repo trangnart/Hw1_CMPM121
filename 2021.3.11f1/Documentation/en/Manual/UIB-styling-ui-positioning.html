@@ -1,0 +1,266 @@
+<!DOCTYPE html><html lang="en" class="no-js">
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<script type="text/javascript" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" charset="UTF-8" data-domain-script="6e91be4c-3145-4ea2-aa64-89d716064836"></script><script type="text/javascript">
+					function OptanonWrapper() { }
+				</script><script>var offline=(location.href.indexOf('docs.unity3d.com')==-1)?true:false;if(!offline){(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);  })(window,document,'script','dataLayer','GTM-5V25JL6');}</script><link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unity - Manual:  Positioning elements</title>
+<meta property="og:image" content="https://unity3d.com/files/images/ogimg.jpg">
+<meta name="author" content="Unity Technologies">
+<link rel="shortcut icon" href="https://unity.com/themes/contrib/unity_base/images/favicons/favicon.ico">
+<link rel="icon" type="image/png" href="../StaticFilesManual/images/favicons/favicon.png">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="../StaticFilesManual/images/favicons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../StaticFilesManual/images/favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="../StaticFilesManual/images/favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../StaticFilesManual/images/favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../StaticFilesManual/images/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon-precomposed" href="../StaticFilesManual/images/favicons/apple-touch-icon.png">
+<meta name="msapplication-TileColor" content="#222c37">
+<meta name="msapplication-TileImage" content="../StaticFilesManual/images/favicons/tileicon-144x144.png">
+<script type="text/javascript" src="https://docs.unity3d.com/StaticFilesConfig/UnityVersionsInfo.js"></script><script type="text/javascript" src="../StaticFilesManual/js/jquery.js?ts=20220923"></script><script type="text/javascript" src="../StaticFilesManual/js/core.js?ts=20220923"></script><script type="text/javascript" src="docdata/toc.js?ts=20220923"></script><script type="text/javascript" src="docdata/global_toc.js?ts=20220923"></script><link rel="stylesheet" type="text/css" href="../StaticFilesManual/css/core.css?ts=20220923">
+<link rel="stylesheet" href="../StaticFilesManual/css/prism.css">
+<script src="../StaticFilesManual/js/prism.js"></script><script src="/StaticFilesConfig/feedback/feedback.js"></script><script src="../StaticFilesManual/js/jquery.sidebar.min.js"></script><link rel="stylesheet" href="../StaticFilesManual/css/mobileoptimisation.css">
+<script src="../StaticFilesManual/js/mobileoptimisation.js"></script>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5V25JL6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<div id="DocsAnalyticsData" data-area="none" data-pagetype="manual"></div>
+<div class="header-wrapper">
+<div id="header" class="header"><div class="content">
+<div class="spacer"><div class="menu">
+<div id="nav-open" for="nav-input"><span></span></div>
+<div class="logo"><a href="https://docs.unity3d.com"></a></div>
+<div class="search-form"><form action="30_search.html" method="get" class="apisearch">
+<input type="text" name="q" placeholder="Search manual..." autosave="Unity Reference" results="5" class="sbox field" id="q"><input type="submit" class="submit">
+</form></div>
+<ul>
+<li><a href="../Manual/index.html" class="selected">Manual</a></li>
+<li><a href="../ScriptReference/index.html">Scripting API</a></li>
+</ul>
+</div></div>
+<div class="more">
+<div class="filler"></div>
+<ul><li><a href="https://unity.com/">unity3d.com</a></li></ul>
+</div>
+</div></div>
+<div class="toolbar"><div class="content">
+<div class="toggle version-number" id="VersionNumber" data-target=".otherversionscontent">
+                                Version: <b>2021.3</b><div class="otherversionscontent" id="OtherVersionsContent" style="display: none;">
+<ul id="OtherVersionsContentUl"></ul>
+<div id="otherVersionsLegend"><ul>
+<li>
+<div id="supportedColour" class="legendBox"></div>Supported</li>
+<li>
+<div id="notFoundColour" class="legendBox"></div>Legacy</li>
+</ul></div>
+</div>
+<div id="VersionSwitcherArrow" class="arrow versionSwitcherArrow"></div>
+</div>
+<div class="lang-switcher"><div class="current toggle" data-target=".lang-list">
+<div class="lbl">Language
+:                <span class="b">English</span>
+</div>
+<div class="arrow"></div>
+<div class="lang-list" style="display:none;"><ul>
+<li><a href="/Manual/UIB-styling-ui-positioning.html">English</a></li>
+<li><a href="/cn/current/Manual/UIB-styling-ui-positioning.html">中文</a></li>
+<li><a href="/ja/current/Manual/UIB-styling-ui-positioning.html">日本語</a></li>
+<li><a href="/es/current/Manual/UIB-styling-ui-positioning.html">Español</a></li>
+<li><a href="/kr/current/Manual/UIB-styling-ui-positioning.html">한국어</a></li>
+<li><a href="/ru/current/Manual/UIB-styling-ui-positioning.html">Русский</a></li>
+</ul></div>
+</div></div>
+</div></div>
+<div class="mobileLogo"><a href="https://docs.unity3d.com"></a></div>
+</div>
+<div id="master-wrapper" class="master-wrapper clear">
+<div id="sidebar" class="sidebar"><div class="sidebar-wrap"><div class="content"><div class="sidebar-menu"><div class="toc" id="customScrollbar">
+<h2>Unity Manual</h2>
+<div class="search-form sidebar-search-form"><form action="30_search.html" method="get" class="apisearch">
+<input type="text" name="q" placeholder="Search manual..." autosave="Unity Reference" results="5" class="sbox field" id="q"><input type="submit" id="mobileSearchBtn" class="submit" value="Search">
+</form></div>
+<div class="toggle version-number sidebar-version-switcher" id="VersionNumber" data-target=".otherversionscontent"><form id="otherVersionsContentMobileForm"><div class="ui-field-contain">
+<label for="select-native-4">Version: 2021.3</label><select name="select-native-4" id="versionsSelectMobile"><option>Select a different version</option>
+<optgroup id="versionsWithThisPageMobile" label="Versions with this page"></optgroup>
+<optgroup id="versionsWithoutThisPageMobile" label="Versions without this page"></optgroup></select>
+</div></form></div>
+<div class="lang-switcher"><div class="current toggle" data-target=".lang-list">
+<div class="lbl">Language
+:                <span class="b">English</span>
+</div>
+<div class="arrow"></div>
+<div class="lang-list" style="display:none;"><ul>
+<li><a href="/Manual/UIB-styling-ui-positioning.html">English</a></li>
+<li><a href="/cn/current/Manual/UIB-styling-ui-positioning.html">中文</a></li>
+<li><a href="/ja/current/Manual/UIB-styling-ui-positioning.html">日本語</a></li>
+<li><a href="/es/current/Manual/UIB-styling-ui-positioning.html">Español</a></li>
+<li><a href="/kr/current/Manual/UIB-styling-ui-positioning.html">한국어</a></li>
+<li><a href="/ru/current/Manual/UIB-styling-ui-positioning.html">Русский</a></li>
+</ul></div>
+</div></div>
+</div></div></div></div></div>
+<div id="content-wrap" class="content-wrap"><div class="content-block"><div class="content">
+<div class="section">
+<div class="breadcrumbs clear"><ul>
+<li><a href="UnityManual.html"> Unity User Manual 2021.3 (LTS)</a></li>
+<li><a href="UIToolkits.html"> Create user interfaces (UI)</a></li>
+<li><a href="UIElements.html"> UI Toolkit</a></li>
+<li><a href="UIBuilder.html"> UI Builder</a></li>
+<li><a href="UIB-styling-ui.html"> Styling UI</a></li>
+<li> Positioning elements</li>
+</ul></div>
+<div class="mb20"><div class="nextprev clear">
+<div class="icon tt left mr1" data-distance="-40|-30|top">
+<span class="prev"><a href="UIB-styling-ui-using-uss-variables.html"></a></span><div class="tip"> USS Variables in UI Builder</div>
+</div>
+<div class="icon tt right" data-distance="-40|-30|top">
+<span class="next"><a href="UIE-LayoutEngine.html"></a></span><div class="tip"> Position element with the layout engine</div>
+</div>
+</div></div>
+<div id="_leavefeedback"></div>
+<h1>Positioning elements</h1>
+<!--BeginSwitchLink--><!--EndSwitchLink-->
+<div class="clear"></div>
+
+<h2>Relative position and flexbox</h2>
+
+<p>UI Toolkit uses a modified version of Yoga, an implementation of the Flexbox <a href="UIE-LayoutEngine.html">layout engine</a>. Flexbox is a common CSS layout engine. Some main style properties are:</p>
+
+<ul>
+<li>
+<strong>Flex &gt; Direction</strong> (<code>flex-direction</code> in USS): Set the layout direction of which elements, or the <strong>main-axis</strong>. The default is <code>column</code> and that means that, without any other overrides, the child element under a parent element with this style property will appear above the second child element in a column.</li>
+<li>
+<strong>Flex &gt; Grow</strong> (<code>flex-grow</code> in USS): This property defines how an element should grow in the <strong>main-axis</strong>. It’s a ratio that’s shared with all other siblings of the same parent. This property is useful when trying make an element stretch to take up the entire size of its parents (minus any siblings). To do this, set the <strong>Flex &gt; Grow</strong> value to <code>1</code>. If you have two siblings with <code>flex-grow</code> set to <code>1</code>, they will each take 50% of the parent’s available size along the <strong>main-axis</strong>.</li>
+<li>
+<strong>Align &gt; Align Items</strong> (<code>align-items</code> in USS): This property defines the alignment of elements in the <strong>cross-axis</strong>, or the perpendicular axis to the <strong>main-axis</strong>. For example, if you have two Buttons in a <code>VisualElement</code> that has <code>flex-direction: column</code> and <code>align-items: flex-end</code> set, the two Buttons will squish against the container’s right edge. The options for <code>align-items</code> have names like <code>flex-start</code> and <code>flex-end</code> because they depend on the value of <code>flex-direction</code>.</li>
+<li>
+<strong>Align &gt; Justify Content</strong> (<code>justify-content</code> in USS): This property defines the alignment of elements in the <strong>main-axis</strong>. For example, if you have two Buttons in a <code>VisualElement</code> that has <code>flex-direction: column</code> and <code>justify-content: flex-end</code> set, the two Buttons squish against the container’s bottom edge. The options for <code>justify-content</code> are named like <code>flex-start</code> and <code>flex-end</code> because they depend on the value of <code>flex-direction</code>.</li>
+</ul>
+
+<p>If the selected element has child elements, you can toggle flex-related style properties in the <strong><span class="tooltip"><strong>Viewport</strong><span class="tooltiptext">The user’s visible area of an app on their screen.<br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#Viewport">Glossary</a></span></span></span></strong> using toggles in the header. The image below shows the options available for the #menu element:</p>
+
+<figure>
+<img src="../uploads/Main/UIBuilder/FlexPropertiesInCanvas.png" alt="FlexPropertiesInCanvas">
+<figcaption>FlexPropertiesInCanvas</figcaption>
+</figure>
+
+<p>It’s recommended to learn how Flexbox works. See the <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Flexbox guide</a> for more information.</p>
+
+<p>You can create complex dynamic layouts by using a combination of the above Flexbox style properties and a hierarchy of <code>VisualElement</code>s. Here’s an example of a layout that anchors a <code>Button</code> on the bottom-right edge of the screen:</p>
+
+<figure>
+<img src="../uploads/Main/UIBuilder/BottomRightCornerButtonLayout.png" alt="BottomRightCornerButtonLayout">
+<figcaption>BottomRightCornerButtonLayout</figcaption>
+</figure>
+
+<p>The UXML for this layout, showing the inline styles set on each container <code>VisualElement</code>, is below:</p>
+
+<pre><code class="lang-xml">&lt;ui:UXML xmlns:ui=&quot;UnityEngine.UIElements&quot; xmlns:uie=&quot;UnityEditor.UIElements&quot;&gt;
+    &lt;ui:VisualElement name=&quot;screen-is-blue&quot; style=&quot;flex-grow: 1; justify-content: flex-end; background-color: blue;&quot;&gt;
+        &lt;ui:VisualElement name=&quot;toolbar-is-orange&quot; style=&quot;align-items: flex-end; background-color: orange;&quot;&gt;
+            &lt;ui:Button text=&quot;Button&quot; display-tooltip-when-elided=&quot;true&quot; /&gt;
+        &lt;/ui:VisualElement&gt;
+    &lt;/ui:VisualElement&gt;
+&lt;/ui:UXML&gt;
+</code></pre>
+
+<p>The containers are colored to reveal their shape. You can use nested <code>VisualElement</code> containers to achieve any dynamic layout without resorting to explicitly setting the position and size of each element. This keeps the layout dynamic and automatically adjusts to the larger container changing size, like the screen changing size.</p>
+
+<h2>Absolute position</h2>
+
+<p>UI Builder also exposes <strong>Position</strong> style properties. To use the <strong>Position</strong> style properties you must set the <strong>Position &gt; Position</strong> type to <strong>Absolute</strong>. This <strong>Absolute</strong> mode makes an element invisible to the default Flexbox-based layout engine. It’s as if it no longer takes any space. <strong>Absolute</strong> position elements will appear on top of any siblings that are still using <strong>Relative</strong> position.</p>
+
+<p>It’s discouraged to use <strong>Absolute</strong> position mode, as it bypasses the built-in layout engine in <span class="tooltip"><strong>UI</strong><span class="tooltiptext">(User Interface) Allows a user to interact with your application. Unity currently supports three UI systems. <a class="tooltipMoreInfoLink" href="UI-system-compare.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#UI">Glossary</a></span></span></span> Toolkit. It might also lead to high-maintenance UI where changing the overall layout would require manually updating individual elements.</p>
+
+<p>While using <strong>Absolute</strong> position, you can use the <strong>Position &gt; Left</strong>, <strong>Top</strong>, <strong>Right</strong>, <strong>Bottom</strong> style properties to offset and size the element from the respective edges of its parent. This doesn’t sett absolute coordinates on the screen but sets offsets relative to the parent element. You can still use <strong>Relative</strong> mode to position the parent element. If you set both a <strong>Left</strong> offset and a <strong>Right</strong> offset, the <strong>Width</strong> style property of the element is ignored and the computed width will now come from the following formula:</p>
+
+<pre><code>element-computed-width = parent-width - left-offset - right-offset
+</code></pre>
+
+<p>
+<strong>Left</strong>, <strong>Top</strong>, <strong>Right</strong>, <strong>Bottom</strong> can also be interpreted as anchors. For example, you can anchor a <code>Button</code> on the bottom-right of the screen:</p>
+
+<figure>
+<img src="../uploads/Main/UIBuilder/BottomRightCornerButtonAbsolute.png" alt="BottomRightCornerButtonAbsolute">
+<figcaption>BottomRightCornerButtonAbsolute</figcaption>
+</figure>
+
+<p>The UXML below displays the inline styles:</p>
+
+<pre><code class="lang-xml">&lt;ui:UXML xmlns:ui=&quot;UnityEngine.UIElements&quot; xmlns:uie=&quot;UnityEditor.UIElements&quot;&gt;
+    &lt;ui:Button text=&quot;Button&quot; style=&quot;position: absolute; right: 0; bottom: 0;&quot; /&gt;
+&lt;/ui:UXML&gt;
+</code></pre>
+
+<p>With positioning, there is a difference between having <strong>Left</strong> set to <code>0</code> and having <strong>Left</strong> unset:</p>
+
+<ul>
+<li>
+<code>Left set to 0</code> means set an offset of 0.</li>
+<li>
+<code>Left unset</code> doesn’t set any offset and lets other style properties define the width or height of the element.</li>
+</ul>
+
+<p>You can also modify these offset style properties directly in the <strong>Canvas</strong> via additional resize handles on each edge and corner of the element’s blue selection border. It’s important to differentiate between what’s set and what’s unset, so the <strong>Canvas</strong> also includes “anchor” toggles as orange squares off each side of the element. The <strong>Canvas</strong> handles will adjust which style properties are set when resizing the element visually, depending on which “anchors” are set. For example, say you are resizing the element in the <strong>Canvas</strong> via its right-border handle:</p>
+
+<ul>
+<li>If you set both <strong>Left</strong> and <strong>Right</strong> properties, the handle will update the <strong>Right</strong> property.</li>
+<li>If you set <strong>Left</strong> but not <strong>Right</strong>, the handle will update the <strong>Width</strong> property.</li>
+</ul>
+
+<h2>Use both Relative and Absolute</h2>
+
+<p>One of the legitimate use cases for <strong>Absolute</strong> position mode is for overlays. It’s useful to overlay some complex UI on top of other complex UI, such as a popup or a dropdown. You can use <strong>Absolute</strong> position only for the overlay container itself, while continuing to use <strong>Relative</strong> mode inside the overlay. Here’s an example of a simple centered popup:</p>
+
+<p>
+<img src="../uploads/Main/UIBuilder/AbsolutePositionOverlayWithPopup.png" alt="AbsolutePositionOverlayWithPopup">
+And here’s the UXML for your reference:</p>
+
+<pre><code class="lang-xml">&lt;ui:UXML xmlns:ui=&quot;UnityEngine.UIElements&quot; xmlns:uie=&quot;UnityEditor.UIElements&quot;&gt;
+    &lt;ui:VisualElement name=&quot;complex-ui-screen&quot;&gt;
+        &lt;ui:Toggle label=&quot;Toggle&quot; /&gt;
+        &lt;ui:MinMaxSlider picking-mode=&quot;Ignore&quot; label=&quot;Min/Max Slider&quot; min-value=&quot;10&quot; max-value=&quot;12&quot; low-limit=&quot;-10&quot; high-limit=&quot;40&quot; /&gt;
+        &lt;ui:Label text=&quot;Label&quot; /&gt;
+        &lt;ui:Button text=&quot;Button&quot; /&gt;
+        &lt;ui:Button text=&quot;Button&quot; /&gt;
+    &lt;/ui:VisualElement&gt;
+    &lt;ui:VisualElement name=&quot;overlay&quot; style=&quot;position: absolute; left: 0; top: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.71); align-items: center; justify-content: center;&quot;&gt;
+        &lt;ui:VisualElement name=&quot;popup&quot; style=&quot;background-color: rgba(70, 70, 70, 255);&quot;&gt;
+            &lt;ui:Label text=&quot;Exit?&quot; name=&quot;message&quot; /&gt;
+            &lt;ui:Button text=&quot;Ok&quot; name=&quot;ok-button&quot; style=&quot;width: 108.3333px;&quot; /&gt;
+        &lt;/ui:VisualElement&gt;
+    &lt;/ui:VisualElement&gt;
+&lt;/ui:UXML&gt;
+</code></pre>
+
+<p>The example above highlights the use of <strong>Absolute</strong> position. Set all <strong>Position &gt; Left</strong>, <strong>Top</strong>, <strong>Right</strong>, <strong>Bottom</strong> to <code>0</code>, so the position is <code>0</code> pixels away from the edges of the screen. This makes the <code>#overlay</code> element overlap the <code>#complex-ui-screen</code> container element. You can also set a semi-transparent background to the <code>#overlay</code> element to make the other UI appear darkened. Use <code>#overlay</code> to set <strong>Relative</strong> position to center our <code>#popup</code> container <code>VisualElement</code>.</p>
+
+<h2>Additional resources</h2>
+
+<ul>
+<li><a href="UIE-USS-Properties-Reference.html">USS properties reference</a></li>
+<li><a href="UIE-USS.html">Style UI with USS</a></li>
+</ul>
+<div id="_content"></div>
+<div class="nextprev clear">
+<div class="icon tt left mr1" data-distance="-40|-30|top">
+<span class="prev"><a href="UIB-styling-ui-using-uss-variables.html"></a></span><div class="tip"> USS Variables in UI Builder</div>
+</div>
+<div class="icon tt right" data-distance="-40|-30|top">
+<span class="next"><a href="UIE-LayoutEngine.html"></a></span><div class="tip"> Position element with the layout engine</div>
+</div>
+</div>
+</div>
+<div class="footer-wrapper"><div class="footer clear">
+<div class="copy">Copyright © 2021 Unity Technologies. Publication Date: 2022-09-23.</div>
+<div class="menu">
+<a href="https://learn.unity.com/">Tutorials</a><a href="https://answers.unity3d.com">Community Answers</a><a href="https://support.unity3d.com/hc/en-us">Knowledge Base</a><a href="https://forum.unity3d.com">Forums</a><a href="https://unity3d.com/asset-store">Asset Store</a><a href="https://docs.unity3d.com/Manual/TermsOfUse.html">Terms of use</a>
+</div>
+</div></div>
+</div></div></div>
+</div>
+</body>
+</html>

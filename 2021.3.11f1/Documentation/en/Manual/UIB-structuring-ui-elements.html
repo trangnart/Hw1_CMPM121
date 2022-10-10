@@ -1,0 +1,191 @@
+<!DOCTYPE html><html lang="en" class="no-js">
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<script type="text/javascript" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" charset="UTF-8" data-domain-script="6e91be4c-3145-4ea2-aa64-89d716064836"></script><script type="text/javascript">
+					function OptanonWrapper() { }
+				</script><script>var offline=(location.href.indexOf('docs.unity3d.com')==-1)?true:false;if(!offline){(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);  })(window,document,'script','dataLayer','GTM-5V25JL6');}</script><link href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap" rel="stylesheet">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unity - Manual:  Working with elements</title>
+<meta property="og:image" content="https://unity3d.com/files/images/ogimg.jpg">
+<meta name="author" content="Unity Technologies">
+<link rel="shortcut icon" href="https://unity.com/themes/contrib/unity_base/images/favicons/favicon.ico">
+<link rel="icon" type="image/png" href="../StaticFilesManual/images/favicons/favicon.png">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="../StaticFilesManual/images/favicons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="../StaticFilesManual/images/favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="../StaticFilesManual/images/favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="../StaticFilesManual/images/favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../StaticFilesManual/images/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon-precomposed" href="../StaticFilesManual/images/favicons/apple-touch-icon.png">
+<meta name="msapplication-TileColor" content="#222c37">
+<meta name="msapplication-TileImage" content="../StaticFilesManual/images/favicons/tileicon-144x144.png">
+<script type="text/javascript" src="https://docs.unity3d.com/StaticFilesConfig/UnityVersionsInfo.js"></script><script type="text/javascript" src="../StaticFilesManual/js/jquery.js?ts=20220923"></script><script type="text/javascript" src="../StaticFilesManual/js/core.js?ts=20220923"></script><script type="text/javascript" src="docdata/toc.js?ts=20220923"></script><script type="text/javascript" src="docdata/global_toc.js?ts=20220923"></script><link rel="stylesheet" type="text/css" href="../StaticFilesManual/css/core.css?ts=20220923">
+<link rel="stylesheet" href="../StaticFilesManual/css/prism.css">
+<script src="../StaticFilesManual/js/prism.js"></script><script src="/StaticFilesConfig/feedback/feedback.js"></script><script src="../StaticFilesManual/js/jquery.sidebar.min.js"></script><link rel="stylesheet" href="../StaticFilesManual/css/mobileoptimisation.css">
+<script src="../StaticFilesManual/js/mobileoptimisation.js"></script>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5V25JL6" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<div id="DocsAnalyticsData" data-area="none" data-pagetype="manual"></div>
+<div class="header-wrapper">
+<div id="header" class="header"><div class="content">
+<div class="spacer"><div class="menu">
+<div id="nav-open" for="nav-input"><span></span></div>
+<div class="logo"><a href="https://docs.unity3d.com"></a></div>
+<div class="search-form"><form action="30_search.html" method="get" class="apisearch">
+<input type="text" name="q" placeholder="Search manual..." autosave="Unity Reference" results="5" class="sbox field" id="q"><input type="submit" class="submit">
+</form></div>
+<ul>
+<li><a href="../Manual/index.html" class="selected">Manual</a></li>
+<li><a href="../ScriptReference/index.html">Scripting API</a></li>
+</ul>
+</div></div>
+<div class="more">
+<div class="filler"></div>
+<ul><li><a href="https://unity.com/">unity3d.com</a></li></ul>
+</div>
+</div></div>
+<div class="toolbar"><div class="content">
+<div class="toggle version-number" id="VersionNumber" data-target=".otherversionscontent">
+                                Version: <b>2021.3</b><div class="otherversionscontent" id="OtherVersionsContent" style="display: none;">
+<ul id="OtherVersionsContentUl"></ul>
+<div id="otherVersionsLegend"><ul>
+<li>
+<div id="supportedColour" class="legendBox"></div>Supported</li>
+<li>
+<div id="notFoundColour" class="legendBox"></div>Legacy</li>
+</ul></div>
+</div>
+<div id="VersionSwitcherArrow" class="arrow versionSwitcherArrow"></div>
+</div>
+<div class="lang-switcher"><div class="current toggle" data-target=".lang-list">
+<div class="lbl">Language
+:                <span class="b">English</span>
+</div>
+<div class="arrow"></div>
+<div class="lang-list" style="display:none;"><ul>
+<li><a href="/Manual/UIB-structuring-ui-elements.html">English</a></li>
+<li><a href="/cn/current/Manual/UIB-structuring-ui-elements.html">中文</a></li>
+<li><a href="/ja/current/Manual/UIB-structuring-ui-elements.html">日本語</a></li>
+<li><a href="/es/current/Manual/UIB-structuring-ui-elements.html">Español</a></li>
+<li><a href="/kr/current/Manual/UIB-structuring-ui-elements.html">한국어</a></li>
+<li><a href="/ru/current/Manual/UIB-structuring-ui-elements.html">Русский</a></li>
+</ul></div>
+</div></div>
+</div></div>
+<div class="mobileLogo"><a href="https://docs.unity3d.com"></a></div>
+</div>
+<div id="master-wrapper" class="master-wrapper clear">
+<div id="sidebar" class="sidebar"><div class="sidebar-wrap"><div class="content"><div class="sidebar-menu"><div class="toc" id="customScrollbar">
+<h2>Unity Manual</h2>
+<div class="search-form sidebar-search-form"><form action="30_search.html" method="get" class="apisearch">
+<input type="text" name="q" placeholder="Search manual..." autosave="Unity Reference" results="5" class="sbox field" id="q"><input type="submit" id="mobileSearchBtn" class="submit" value="Search">
+</form></div>
+<div class="toggle version-number sidebar-version-switcher" id="VersionNumber" data-target=".otherversionscontent"><form id="otherVersionsContentMobileForm"><div class="ui-field-contain">
+<label for="select-native-4">Version: 2021.3</label><select name="select-native-4" id="versionsSelectMobile"><option>Select a different version</option>
+<optgroup id="versionsWithThisPageMobile" label="Versions with this page"></optgroup>
+<optgroup id="versionsWithoutThisPageMobile" label="Versions without this page"></optgroup></select>
+</div></form></div>
+<div class="lang-switcher"><div class="current toggle" data-target=".lang-list">
+<div class="lbl">Language
+:                <span class="b">English</span>
+</div>
+<div class="arrow"></div>
+<div class="lang-list" style="display:none;"><ul>
+<li><a href="/Manual/UIB-structuring-ui-elements.html">English</a></li>
+<li><a href="/cn/current/Manual/UIB-structuring-ui-elements.html">中文</a></li>
+<li><a href="/ja/current/Manual/UIB-structuring-ui-elements.html">日本語</a></li>
+<li><a href="/es/current/Manual/UIB-structuring-ui-elements.html">Español</a></li>
+<li><a href="/kr/current/Manual/UIB-structuring-ui-elements.html">한국어</a></li>
+<li><a href="/ru/current/Manual/UIB-structuring-ui-elements.html">Русский</a></li>
+</ul></div>
+</div></div>
+</div></div></div></div></div>
+<div id="content-wrap" class="content-wrap"><div class="content-block"><div class="content">
+<div class="section">
+<div class="breadcrumbs clear"><ul>
+<li><a href="UnityManual.html"> Unity User Manual 2021.3 (LTS)</a></li>
+<li><a href="UIToolkits.html"> Create user interfaces (UI)</a></li>
+<li><a href="UIElements.html"> UI Toolkit</a></li>
+<li><a href="UIBuilder.html"> UI Builder</a></li>
+<li><a href="UIB-structuring-ui.html"> Structuring UI</a></li>
+<li> Working with elements</li>
+</ul></div>
+<div class="mb20"><div class="nextprev clear">
+<div class="icon tt left mr1" data-distance="-40|-30|top">
+<span class="prev"><a href="UIB-structuring-ui.html"></a></span><div class="tip"> Structuring UI</div>
+</div>
+<div class="icon tt right" data-distance="-40|-30|top">
+<span class="next"><a href="UIB-structuring-ui-templates.html"></a></span><div class="tip"> Using UXML instances as templates</div>
+</div>
+</div></div>
+<div id="_leavefeedback"></div>
+<h1>Working with elements</h1>
+<!--BeginSwitchLink--><!--EndSwitchLink-->
+<div class="clear"></div>
+
+<h2>Basic workflow</h2>
+
+<p>The basic workflow in <span class="tooltip"><strong>UI</strong><span class="tooltiptext">(User Interface) Allows a user to interact with your application. Unity currently supports three UI systems. <a class="tooltipMoreInfoLink" href="UI-system-compare.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a class="tooltipMoreInfoLink" href="Glossary.html#UI">Glossary</a></span></span></span> Builder starts with you creating some elements by dragging elements from the <strong>Library</strong> pane onto the <strong>Hierarchy</strong>.UI Toolkit is built and laid out as a hierarchy of elements. The hierarchy dictates which elements are on top of other elements and the order in which elements appear visually in the UI. It’s similar to a transform hierarchy in a Unity <span class="tooltip"><strong>Scene</strong><span class="tooltiptext">A Scene contains the environments and menus of your game. Think of each unique Scene file as a unique level. In each Scene, you place your environments, obstacles, and decorations, essentially designing and building your game in pieces. <a href="CreatingScenes.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#Scene">Glossary</a></span></span></span>, except width and height are also influenced by parent or children elements. Another difference is, depending on style properties, some children will drive the size of their parents, while some parents will impact the size of their children.</p>
+
+<p>The basic construction block and base class for all elements in UI Toolkit, is the <code>VisualElement</code> class. It acts as the container element to create complex layouts. For example, to anchor a <code>Button</code> to the bottom right of the screen, you would need the following <code>VisualElements</code> hierarchy:</p>
+
+<pre><code class="lang-csharp">VisualElement #screen { flex-grow: 1; justify-content: flex-end; }
+    VisualElement #bottom-container { flex-direction: row; justify-content: flex-end; }
+        Button
+</code></pre>
+
+<h2>Select elements</h2>
+
+<p>You can select elements by clicking on them, both in the <strong>Hierarchy</strong> and in the <strong>Canvas</strong>. In the <strong>Hierarchy</strong>, hold down <strong>Ctrl/Cmd</strong> to select additional elements. In the <strong>Canvas</strong>, a double-click on top of an element selects its parent element, which you can repeat to travel up the element hierarchy until it reverts back to the original element.</p>
+
+<h2>Create elements</h2>
+
+<p>When you create elements from the <strong>Library</strong> pane, UI Builder tries to preserve defaults, with some exceptions. By default, elements aren’t named, so they appear in the <strong>Hierarchy</strong> as their type name. To name an element, double-click on the item in the <strong>Hierarchy</strong>, or select an element and find the <strong>Name</strong> attribute in the <strong><span class="tooltip"><strong>Inspector</strong><span class="tooltiptext">A Unity window that displays information about the currently selected GameObject, asset or project settings, allowing you to inspect and edit the values. <a class="tooltipMoreInfoLink" href="UsingTheInspector.html">More info</a><br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#Inspector">Glossary</a></span></span></span></strong>. Unique naming in UI Toolkit isn’t enforced, so they’re only for identification within the UI. UI Builder won’t use element names for any internal identification or functionality.</p>
+
+<p>To build a hierarchy, you can drag one or more elements in the <strong>Hierarchy</strong> to reorder them or move them between parents:</p>
+
+<figure>
+<img src="../uploads/Main/UIBuilder/ReorderInHierarchy.png" alt="ReorderInHierarchy">
+<figcaption>ReorderInHierarchy</figcaption>
+</figure>
+
+<p>You can also drag elements into and from the <strong><span class="tooltip"><strong>Viewport</strong><span class="tooltiptext">The user’s visible area of an app on their screen.<br/><span class="tooltipGlossaryLink">See in <a href="Glossary.html#Viewport">Glossary</a></span></span></span></strong> <strong>Canvas</strong>, where a <strong>yellow line</strong> will appear to indicate where the element placement:</p>
+
+<figure>
+<img src="../uploads/Main/UIBuilder/ReorderInCanvas.png" alt="ReorderInCanvas">
+<figcaption>ReorderInCanvas</figcaption>
+</figure>
+
+<h2>Manipulate elements</h2>
+
+<p>To <strong>cut/copy/paste/duplicate/delete</strong> one or more selected elements, right-click on an element, and select the option in the menu. You can also use the standard short-cut keys for your operating system.</p>
+
+<p>When you copy an element in the <strong>Hierarchy</strong> pane, it copies the UXML text representation of the element and its children. This means you can paste it directly into a text editor. You can also copy UXML text and paste it in the UI Builder.</p>
+
+<p>All actions you do to an element are also applied to all its children. For example, deleting an element deletes all its children and duplicating an element will replicated the entire sub-tree of elements under it.</p>
+
+<h2>Read-only elements</h2>
+
+<p>You might see additional children elements created in the <strong>Hierarchy</strong> from an element dragged from the <strong>Library</strong> folder. These child elements will appear grayed out in the <strong>Hierarchy</strong>. This happens because some custom elements, like most elements in the <strong>Standard</strong> tab of the <strong>Library</strong>, create their internal hierarchy upon creation. You can’t edit the internal hierarchy in UI Builder because the UI Builder can only edit what it can represent in the UI Document (UXML) it’s editing. If you look at the UXML, these internal hierarchies don’t exist. UXML is more like an instruction set and not an 1-to–1 copy of the live UI hierarchy.</p>
+<div id="_content"></div>
+<div class="nextprev clear">
+<div class="icon tt left mr1" data-distance="-40|-30|top">
+<span class="prev"><a href="UIB-structuring-ui.html"></a></span><div class="tip"> Structuring UI</div>
+</div>
+<div class="icon tt right" data-distance="-40|-30|top">
+<span class="next"><a href="UIB-structuring-ui-templates.html"></a></span><div class="tip"> Using UXML instances as templates</div>
+</div>
+</div>
+</div>
+<div class="footer-wrapper"><div class="footer clear">
+<div class="copy">Copyright © 2021 Unity Technologies. Publication Date: 2022-09-23.</div>
+<div class="menu">
+<a href="https://learn.unity.com/">Tutorials</a><a href="https://answers.unity3d.com">Community Answers</a><a href="https://support.unity3d.com/hc/en-us">Knowledge Base</a><a href="https://forum.unity3d.com">Forums</a><a href="https://unity3d.com/asset-store">Asset Store</a><a href="https://docs.unity3d.com/Manual/TermsOfUse.html">Terms of use</a>
+</div>
+</div></div>
+</div></div></div>
+</div>
+</body>
+</html>
